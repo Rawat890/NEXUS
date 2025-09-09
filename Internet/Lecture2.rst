@@ -7,3 +7,21 @@ ASCII not fullProof
 So UTF-8, UTF-16, UTF-32 used nowadays.
 
 System only understands binary, It's our duty to convert
+
+Computer ------------------->Assembler<-------------Assembly Language
+(binary only)                converts               ADD 23 
+
+Computer ------------------->compiler<-------------High level Language
+(binary only)                converts               ADD 23 
+
+Machine language > Assembly language > High level language
+
+Circuit switching - 
+Computer1---->p1---->p2----->p3----->p4----->Computer2
+  binary            telephone lining
+                    (analog signals)
+
+To overcome the drawbacks -->
+ARPANET (Advanced Research Projects Agency Network) was the precursor to the modern internet, developed by the United States Department of Defense's ARPA in the late 1960s to connect research institutions and government agencies. It pioneered packet switching, a method of breaking data into small packets for transmission across a decentralized network, and was the first to implement the TCP/IP protocol, which forms the basis of the internet today. ARPANET also supported key applications like email, FTP, and Telnet, laying the groundwork for the global internet
+Got success in 1969 and 1st message was "login" and received only "lo" and System crashed
+
