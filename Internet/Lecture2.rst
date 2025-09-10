@@ -25,3 +25,4 @@ To overcome the drawbacks -->
 ARPANET (Advanced Research Projects Agency Network) was the precursor to the modern internet, developed by the United States Department of Defense's ARPA in the late 1960s to connect research institutions and government agencies. It pioneered packet switching, a method of breaking data into small packets for transmission across a decentralized network, and was the first to implement the TCP/IP protocol, which forms the basis of the internet today. ARPANET also supported key applications like email, FTP, and Telnet, laying the groundwork for the global internet
 Got success in 1969 and 1st message was "login" and received only "lo" and System crashed
 
+packets can move from any line to reach the destination
