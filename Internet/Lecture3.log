@@ -1,0 +1,53 @@
+DECODING IP ADDRESS
+1974, protocols created that is TCP/IP protocols that is used in ARPANET.
+
+Networking is copy of post office
+
+Size is fixed for IP address that is 32 bits also called [IPV4]
+example - 192  . 36 . 15 .  8   (computer)     human readable
+           8bit 8bit 8bit 8bit
+
+Whichever device connected to internet has given a IP address
+
+[computer1] ---------------->Router1------------->Router2------------>[computer2]
+192.08.21.11                   |                    |                  04.34.21.4
+                             Router3---------------Router4   
+                               |                    |
+                             Router5--------------Router6------------Router7------->[computer3]  
+                               |                    |
+                           [computer4]            [computer5]
+
+Nowadays IPV6 is used. - 128 bits (2^128) devices have IP ADDRESS
+
+Who provides the IP address ?
+The organization that provides the services like Jio , airtel, Vi
+
+But nowadays, do we put the ip address which is not possible to remember to visit a website?
+Nope, google.com takes you to google website
+This is made possible by DNS (domain name is easy to remember) - coverts domain name to ip address.
+
+Client --------------------->ISP--------------------------------> Root name server (.com, .in, .net)
+youtube.com          {cache is stored}         if not present          |
+                     most visited websites ----------------------------  (sends ip of server of that
+         ----------->youtube.com: 192.23.4.55                             .com domain)
+        |                      |
+        |                      |
+        |              Top level domain server (.com)
+        |                      |
+         ------------- Authorative main server (particular of multiple that can do the job)
+                        (sends ip address)
+
+Domains like - youtube, amazon given static ip address as they have to active 24 x 7
+Other devices are given ip address dynamically , when connected to internet provided by internet providers and when internet disconnected, ip address taken from the device and allocated to other one
+
+There are 13 root name servers, but each of these represents a cluster of many physical servers distributed globally using anycast routing.
+
+Class A - 50%  ip address
+Class B - 25%
+Class C - 12.5%
+Class D - 6.25%
+Class E - 6.25%
+
+_________._________._________._________._________
+  0-127     128-191  192-223  224-239    240-255     [2^32]bits
+  191.03.55.11 (class b address)
