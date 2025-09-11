@@ -8,7 +8,7 @@ So UTF-8, UTF-16, UTF-32 used nowadays.
 
 System only understands binary, It's our duty to convert
 
-Computer ------------------->Assembler<-------------Assembly Language
+Computer <-------------------Assembler<-------------Assembly Language
 (binary only)                converts               ADD 23 
 
 Computer ------------------->compiler<-------------High level Language
