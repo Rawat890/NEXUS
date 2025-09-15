@@ -19,7 +19,7 @@ Class D - 1 1 1 0(fixed) _ _ _ _ (224-239). _ _ _ _ _ _ _ _ . _ _ _ _ _ _ _ _ . 
 Class E - 1 1 1 1(fixed) _ _ _ _ (240-255). _ _ _ _ _ _ _ _ . _ _ _ _ _ _ _ _ . _ _ _ _ _ _ _ _ 
 
 IANA is responsible for distributing the IP addresses
-(international assigned of number authority) --> distibute to 5 regions of world
+(International assigned of number authority) --> distibute to 5 regions of world
 Asia-Pacific ---> they also provide country wise to ISP providers of their country like VI, Jio 
 provides in meaningful way like 73.0.0.0 to 73.255.255.255 ip addresses are given to jio (2^24)
 Africa
