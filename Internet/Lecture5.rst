@@ -1,5 +1,5 @@
 TYPES OF NETWORKS
-LAN - Local area network 
+LAN - Local area network (limited devices and area like school)
                    
                    [All devices connected have common ip address]
         ios device- - - - Router - - - -mobile (10.0.0.4)
@@ -23,3 +23,15 @@ D	224.0.0.0 to  239.255.255.255	Multicast
 E	240.0.0.0 to  255.255.255.254	Experimental
 
 Example- You make request to facebook, facebook will see same public address and when response comes to the "router" it checks the private address of the devoce that made the request
+
+MAN - Metropolitan area network -> network of a city
+
+    ios device- - - - Router - - - -mobile (10.0.0.4).                      ios device- - - - Router - - - -mobile (10.0.0.4).        
+        (10.0.0.5)        / | \  \                                            (10.0.0.5)        / | \  \
+                         /  |  \  \                        connection                          /  |  \  \
+                computer3   |   \  computer5             established between          computer3   |   \  computer5
+                      computer1  \ (10.0.0.2)            multiple LANs                       computer1  \ (10.0.0.2)
+                    (10.0.0.3)      computer2                                               (10.0.0.3)    computer2
+                                   (10.0.0.1)                                                             (10.0.0.1)
+
+WAN - Wide area network -> network of a country
