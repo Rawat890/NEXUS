@@ -87,3 +87,19 @@ ____________________________________________
 
 
 VPN (Virtual private network)
+In a country, we are not able to access some websites
+example - Govt bans xyz.com and ISP responsible for banning the websites
+
+(shows vpn ip address , but actual is same)
+computer1 (13.2.5.6)----------requests to banned website ---------ISP------->vpn server (Germany) 91.23.4.2-----> server
+                                                                                                                  Germany
+(vpn installed and connect                                it will think that
+with vpn server of the vountry                            this address is not banned in Country 
+ you want the ip address)                                 so it will let it leave
+
+ Then VPN goes to that illegal website and requests for you and made request
+
+ |source id | encrypted data | destination id|
+            deep packet analysis
+            (isp can predict which website you are 
+            visiting via VPN )
