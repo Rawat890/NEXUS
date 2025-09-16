@@ -26,12 +26,64 @@ Example- You make request to facebook, facebook will see same public address and
 
 MAN - Metropolitan area network -> network of a city
 
-    ios device- - - - Router - - - -mobile (10.0.0.4).                      ios device- - - - Router - - - -mobile (10.0.0.4).        
-        (10.0.0.5)        / | \  \                                            (10.0.0.5)        / | \  \
-                         /  |  \  \                        connection                          /  |  \  \
-                computer3   |   \  computer5             established between          computer3   |   \  computer5
-                      computer1  \ (10.0.0.2)            multiple LANs                       computer1  \ (10.0.0.2)
-                    (10.0.0.3)      computer2                                               (10.0.0.3)    computer2
+    ios device- - - - Router - - - -mobile (10.0.0.4)                      ios device- - - - Router - - - -mobile (10.0.0.4).        
+    (10.0.0.5)         / | \  \                                            (10.0.0.5)        / | \  \
+                      /  |  \  \                         connection                         /  |  \  \
+                computer3    \  \  computer5           established between          computer3  |   \  computer5 (10.0.0.2)
+                      computer1  \ (10.0.0.2)            multiple LANs                       computer1  \ 
+                    (10.0.0.3)      computer2                                                (10.0.0.3)    computer2
                                    (10.0.0.1)                                                             (10.0.0.1)
 
 WAN - Wide area network -> network of a country
+wires have been made to travel the data
+
+TYPES OF TOPOLOGY
+
+1. Bus Topology - 
+      ______________________________________ wire 
+      |          |             |           |
+computer1    computer2      computer3  computer4
+
+2. Ring Topology
+                        computer1 
+                       /         \ 
+                      /           \
+             computer4            computer2
+                      \           /
+                       \         / 
+                        computer3         
+3. Star Topology
+
+                   computer1 
+                       \          
+                        \         
+                       Hub       
+                      /    \      
+                     /      \   
+             computer3     computer3
+
+4. Mesh Topology
+5. Hybrid Topology
+
+
+HOW VPN WORKS AND DARK WEB WORKS ?
+
+ios device- - - - Router - - - -mobile (10.0.0.4) -------------------------ios device- - - - Router - - - -mobile (10.0.0.4).        
+    (10.0.0.5)         / |  \  \                                            (10.0.0.5)        / | \  \
+                      /  |   \  \                         connection                         /  |  \  \
+                computer3     \  computer5           established between          computer3  |   \  \   computer5 (10.0.0.2)
+                      computer1 \ (10.0.0.2)            multiple LANs                       computer1 \ 
+                    (10.0.0.3)   computer2                                                (10.0.0.3)  computer2
+                                 (10.0.0.1)                                                            (10.0.0.1)
+
+Router is responsible for providing the route to the data packet to correct destination
+
+____________________________________________
+|source address | data | destination address|
+|___________________________________________|-> data is encrypted when send to router
+          dsa code --> YKSTU 
+
+"PRIVACY IS A MYTH"
+
+
+VPN (Virtual private network)
