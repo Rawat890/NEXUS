@@ -17,7 +17,7 @@ console.log(obj2.age) //30
 |||||||||||||||||||||||||||||||||||||||||
 |||                                   |||
 |||                                   |||
-|||                                   ||| STACK
+|||  person(123)                      ||| STACK
 |||  12                               ||| (primitives stored here)
 |||  Kumar                            |||
 |||  D2                               |||
@@ -25,10 +25,11 @@ console.log(obj2.age) //30
 |||||||||||||||||||||||||||||||||||||||||
 |||                                   |||
 |||             D1            D4      |||
-|||                                   |||
-|||                                   |||
+|||      {id:20, name:'Rohit'}        |||
+|||             123 is address        |||
 |||                                   ||| HEAP
 |||      D2            D3             ||| (non primitive stored here)
-|||                                   |||
+|||                                   ||| but variables are in stack
 |||                                   |||
 |||||||||||||||||||||||||||||||||||||||||
+
