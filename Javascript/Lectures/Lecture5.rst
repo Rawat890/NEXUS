@@ -54,3 +54,15 @@ example - How 16 Gb pub g game is loaded in 8 Gb RAM (fragments of game is loade
 3. Close the game
 4. Memory is freed by garbage collector
 5. Open the game again
+
+Even the variable is constant, but the non-primitive data type values can bve changes as the varible stores the address of the object in heap memory.
+But, if we try to reassign the varible to a new object, it will throw error.
+
+example - 
+```Javascript
+const obj1 = {name: 'John', age: 22}; //reference type - stored in heap
+obj1.age =45 //allowed
+obj1 = {name: 'Rohit', age: 30} //not allowed
+```
+obj2 = obj1; //not allowed as obj1 is constant
+object.freeze() - to make object immutable
