@@ -36,3 +36,14 @@ for (const key in person1) {
   const element = key;
   console.log(element)
 }
+
+console.log(Object.getOwnPropertyDescriptor(person, 'profession'))
+
+Object.defineProperty(person1, 'address', {
+  value: 'Hoshiarpur, Punjab',
+  writable: true,
+  enumerable:true,
+  configurable:true
+})
+
+console.log(person1)
