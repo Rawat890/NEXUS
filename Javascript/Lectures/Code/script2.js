@@ -44,3 +44,38 @@ console.log(obj)
 obj1.occupation = 'police';
 const obj2 = Object.assign({}, obj1, obj);
 console.log(obj2)
+
+//Shallow copy vs deep copy
+let employee = {
+    eid: "E102",
+    ename: "Jack",
+    eaddress: "New York",
+    salary: 50000
+}
+
+console.log("Employee=> ", employee);
+let newEmployee = employee;    // Shallow copy
+console.log("New Employee=> ", newEmployee);
+
+console.log("---------After modification----------");
+newEmployee.ename = "Beck";
+console.log("Employee=> ", employee);
+console.log("New Employee=> ", newEmployee);
+// Name of the employee as well as 
+// newEmployee is changed.
+
+let employee1 = {
+    eid: "E102",
+    ename: "Jack",
+    eaddress: "New York",
+    salary: 50000
+}
+console.log("=========Deep Copy========");
+let newEmployee1 = JSON.parse(JSON.stringify(employee1));
+console.log("Employee=> ", employee1);
+console.log("New Employee=> ", newEmployee1);
+console.log("---------After modification---------");
+newEmployee1.ename = "Beck";
+newEmployee1.salary = 70000;
+console.log("Employee=> ", employee1);
+console.log("New Employee=> ", newEmployee1);
