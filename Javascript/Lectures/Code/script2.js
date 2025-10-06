@@ -109,3 +109,23 @@ const {pincode} = object1.address;
 const {address:{city}} = object1;
 console.log(pincode)
 console.log(city)
+
+const user2 ={
+  name:'user2',
+  class:'MCA',
+  city:'Hsp'
+}
+
+const user1 ={
+  name:'user1',
+  age:24
+}
+
+console.log(user2.age) //undefined
+
+user2.__proto__ = user1;
+console.log(user2.age) //24 (inherits the properties of user1 by changing the prototype)
+console.log(user2)
+user2.age =90;
+console.log(user1)
+console.log(user2)
