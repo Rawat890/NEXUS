@@ -66,3 +66,7 @@ obj1 = {name: 'Rohit', age: 30} //not allowed
 ```
 obj2 = obj1; //not allowed as obj1 is constant
 object.freeze() - to make object immutable
+
+
+Array is not stored as contiguous memory location in javascript as js is dynamically typed language
+Implemeted same as on base of object as in heap memory
