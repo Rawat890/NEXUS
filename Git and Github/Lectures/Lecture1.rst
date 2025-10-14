@@ -8,3 +8,21 @@ Git is a version control system that allows us to track our code changes and rev
 git config --global user.name 'Rohan'
 git config --global user.email 'Rohan@gmail.com'
 git config --list 
+
+git add . - all file for tracking
+git diff - to show changes
+git status
+
+git log
+git log --oneline (q to quit)
+git show "id"
+
+  Master
+  Branch
+     O->O->O->O->O->O->O->O->O
+                             HEAD (latest commit)
+
+To move to previous commit - 
+git reset --hard HEAD~1 
+git reset --hard <hashcode> -->HEAD moved to the hashcode
+git revert <hashcode>
