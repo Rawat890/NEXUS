@@ -36,3 +36,7 @@ const callNum = (num) =>{
   greet(`Rohan Rawat - ${num}`)
 }
 arr.forEach(callNum)
+
+const numberLessThan4 = arr.filter((num)=>num<4);
+console.log(numberLessThan4)
+console.log(arr)
