@@ -40,7 +40,7 @@ console.log(obj2.age) //30
 1GB = 2^30 BYTES
 8GB = 2^33 BYTES (RANDOM ACCESS MEMORY)
 
-When we try to chjange the value of primitive type variable, a new memory is allocated in stack. But when we change the value of reference type variable, the same memory location is used in heap.
+When we try to change the value of primitive type variable, a new memory is allocated in stack. But when we change the value of reference type variable, the same memory location is used in heap.
 
 As in languages like C, C++, we have to free memory manually, but in js we have garbage collector which automatically frees memory which is not being used.
 In C, int a =10 // means in a only integer value can be stored. But in js, we can store any type so that's is why it is called dynamically type language and new memory is allocated when we try to update the value of primitive type varible.

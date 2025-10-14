@@ -1,7 +1,7 @@
 Javascript is 'interpreted, not compiled and is dynamically typed'. This means that the code is executed line by line, and types are determined at runtime. This can lead to some unexpected behaviors, especially for those coming from statically typed languages like Java or C++.
 example - 
 ```Javascript
-let x =5;
+let x=5;
 let y=5;
 console.log(x==y); //true
 console.log(x===y;) //true
