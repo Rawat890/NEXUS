@@ -25,4 +25,14 @@ git show "id"
 To move to previous commit - 
 git reset --hard HEAD~1 
 git reset --hard <hashcode> -->HEAD moved to the hashcode
+
+If you want to remove changes of 3rd last commit - 
+  Master
+  Branch
+     O->O->O->O->O->O->O->O->O
+                             HEAD (latest commit)
+
+{Used to undo changes but history will be there}
 git revert <hashcode>
+git add 'file'
+git commit 
