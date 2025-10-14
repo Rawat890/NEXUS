@@ -9,8 +9,8 @@ console(y)
    Memory               Code
 |||||||||||||||||||||||||||||||||||||||
 ||                 |                 ||
-||  x:undefined    |                 ||
-||  y: (nothing    |                 ||
+||  x:undefined    |                 || x is initialized while - undefined ,
+||  y: (nothing    |                 || but y gets memory but is not initialized yet
 ||      given)     |                 || Temporal dead zone 
 ||                 |                 ||
 ||    Key values   |                 ||
@@ -34,3 +34,13 @@ First Mmeory is allocated to the varibles and the code is executed
 ||                 |                 ||
 ||                 |                 ||
 |||||||||||||||||||||||||||||||||||||||
+
+Javascript is a single threaded, synchronous and dynamically typed and interpretign language
+One statement at a time and in sequence
+
+What is Temporal Deadzone ?
+It is that time period, when the variables are not initialized properly insisde the memory block, they are said to be in the temporal dead zone.
+We are accessing the varibale , even before declaring and defining it
+
+Hositing in javascript is the behavior where variable and function declarations are moved to the top of their containing scope, during the compilation phase, before the code is being executed
+Not the assignment
