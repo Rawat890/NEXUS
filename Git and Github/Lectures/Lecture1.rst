@@ -8,6 +8,8 @@ Git is a version control system that allows us to track our code changes and rev
 git config --global user.name 'Rohan'
 git config --global user.email 'Rohan@gmail.com'
 git config --list 
+git config --global --unset-all user.email
+
 
 git add . - all file for tracking
 git diff - to show changes
