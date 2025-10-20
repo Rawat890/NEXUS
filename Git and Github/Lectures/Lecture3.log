@@ -1,0 +1,16 @@
+Rebasing - strategy is same as to merge the code 
+Here we make the branches to move in a linear manner
+In Git, rebase is a powerful command used to integrate changes from one branch into another by moving or combining a sequence of commits to a new base commit. Unlike git merge, which creates a new merge commit, git rebase rewrites the project history to create a cleaner, linear history. 
+Here's a breakdown of what git rebase does:
+Rewriting History: rebase takes the commits from your current branch, "rewinds" them, applies them on top of the target branch's latest commit, and then reapplies your current branch's commits. This effectively makes it appear as if your work started from the most recent state of the target branch.
+Linear History: The primary benefit of rebase is that it results in a linear commit history, avoiding the "merge commits" that can clutter the commit graph when using git merge. This can make the history easier to read and understand, especially for projects with frequent merges.
+Applying Changes: When you rebase your feature branch onto a main branch, for example, Git takes all the commits from your feature branch, temporarily sets them aside, updates your feature branch to point to the latest commit on main, and then reapplies your feature branch's commits one by one on top of that new base.
+
+
+When to use rebase:
+Keeping Feature Branches Up-to-Date: Before merging a feature branch into main, you might rebase it onto main to ensure it incorporates all the latest changes and resolves any conflicts before the final merge.
+Cleaning Up Local Commits: rebase can be used interactively to combine, reorder, edit, or delete commits in your local branch before pushing them to a shared repository, creating a more polished and concise history.
+Important Considerations:
+Do not rebase shared branches: Rebasing rewrites commit history, which can cause significant problems for collaborators if you rebase a branch that others have already pulled. Always use rebase on branches that are local to your repository or only shared with a small, coordinated team.
+Conflict Resolution: During a rebase, if the same lines of code have been modified in both branches, Git will pause the rebase process and require you to resolve the conflicts manually.
+In
