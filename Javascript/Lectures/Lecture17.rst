@@ -11,7 +11,7 @@ console(y)
 ||                 |                 ||
 ||  x:undefined    |                 || x is initialized while - undefined ,
 ||  y: (nothing    |                 || but y gets memory but is not initialized yet
-||      given)     |                 || Temporal dead zone 
+||      given)     |                 || Temporal dead zone - memory allocated but value not given
 ||                 |                 ||
 ||    Key values   |                 ||
 ||                 |                 ||
@@ -44,3 +44,65 @@ We are accessing the varibale , even before declaring and defining it
 
 Hositing in javascript is the behavior where variable and function declarations are moved to the top of their containing scope, during the compilation phase, before the code is being executed
 Not the assignment
+
+example- 
+let a = 10;
+let b= 20;
+function add(a,b) {
+let result = a + b;
+return result;
+}
+
+var ans= add(a, b);
+console(ans);
+
+   Memory               Code
+|||||||||||||||||||||||||||||||||||||||
+||                  |                 ||
+||  x:              |line 1 executes  ||
+||  y:              |line 2 executes  ||
+||  add: { function |                 ||
+|| stored not memory|                 ||
+|| assigend to vars |                 ||
+||    Key values    |                 ||
+||                  |                 ||
+||                  |                 ||
+||                  |                 ||
+|||||||||||||||||||||||||||||||||||||||
+
+execution context created;
+
+Steps -
+1. Memory allocated to a and b but value is not assigned
+2. add : { } // add is allocated in memory but not executed
+3. ans is allocated Memory and assigned a value of undefined
+4. Now code execution starts - 
+   a = 10 and b =10
+   add is called and a and b passed
+   New 'EXECUTION CONTEXT' created for the function
+
+   Memory               Code
+|||||||||||||||||||||||||||||||||||||||
+||                 |                 ||
+||  x:10           |line 1 executes  ||
+||  y:20           |line 2 executes  ||
+||  add: { }       | logs data       ||
+||                 |                 ||
+||    Key values   |                 ||
+||                 |                 ||
+||                 |                 ||
+||                 |                 ||
+|||||||||||||||||||||||||||||||||||||||
+
+
+||                         ||
+||                         ||
+||                         ||
+||                         ||
+||                         ||
+||                         ||
+||                         ||
+||     add(a,b)            ||   Push Pop happens 
+|||||||||||||||||||||||||||||                       
+||Global execution constant||
+|||||||||||||||||||||||||||||                         
