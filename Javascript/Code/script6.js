@@ -1,6 +1,6 @@
 //QUES 1. Find the sum of all elements in an array
 
-const arr = [1,34,12,'', 'Hero',-45,19,33];
+const arr = [1,34,12,'', 'Hero',-45,19,33,34,45,1,1,54];
 
 function printSum1(arr) {
   let sum =0;
@@ -154,4 +154,21 @@ function average3(arr) {
   return sum/arr.length;
 }
 
-console.log('Average 1 - ', average2(arr))
+console.log('Average 1 - ', average3(arr))
+
+//QUES 6. Check if an element exists in an array
+console.log(Array.isArray(arr))
+console.log(arr.includes('Hero'))
+
+//QUES 7. Count how many times a specific element appears in an array
+function countNumber(arr, num) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i]==='number' && arr[i]===num) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log('Count is - ', countNumber(arr,10))
